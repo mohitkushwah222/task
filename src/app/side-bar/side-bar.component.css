@@ -1,0 +1,23 @@
+:host {
+    display: block;
+    width: 80px;
+    border-right: 1px solid #00000036;
+    height: 92vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa {
+    display: block;
+    padding: 6px;
+    margin: 10px;
+    color: lightgray;
+    border-radius: 4px;
+}
+.active {
+  color: white;
+  background: #1f9ae8;
+}

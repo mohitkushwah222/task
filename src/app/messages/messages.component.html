@@ -1,0 +1,31 @@
+<div class="content">
+  <div class="header d-flex justify-content-between p-3">
+    <span>Message</span>
+    <span class="fa fa-envelope-open"></span>
+  </div>
+  <div class="links">
+    <div *ngFor="let item of links" class="d-flex align-items-baseline justify-content-between " [class.active]="item.name  === 'inbox'">
+      <label for="">
+        <span class="fa {{item.icon}}"></span>
+        <span>{{item.name}}</span>
+      </label>
+      <span class="notification d-flex justify-content-center align-items-center">{{item.notification}}</span>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="header d-flex justify-content-between p-2">
+    <span>Contacts</span>
+    <span class="fa fa-address-book"></span>
+  </div>
+  <div class="links contacts">
+    <div *ngFor="let item of contacts" class="d-flex" [class.active]="item.name  === 'inbox'">
+      <span class="fa {{item.icon}} d-flex justify-content-center align-items-center"></span>
+      <label for="">
+        <span class="name">{{item.name}}</span>
+        <div>{{item.details}}</div>
+      </label>
+    </div>
+  </div>
+</div>

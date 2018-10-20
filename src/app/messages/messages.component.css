@@ -1,0 +1,72 @@
+:host {
+    display: block;
+    padding-left: 1%;
+}
+
+.content {
+    margin-bottom: 50px;
+}
+
+.links {
+    margin-left: 10px;
+}
+
+.links .fa {
+    padding-right: 10px;
+}
+
+.links div {
+    color: lightgray;
+    cursor: pointer;
+    padding: 5px 5px 5px 20px;
+}
+
+.contacts label div {
+    padding: 0;
+}
+
+.contacts label .name {
+    color: black;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.contacts div .fa {
+    height: 43px;
+    width: 40px;
+    font-size: 25px;
+}
+
+.links div:hover {
+    color: #096cb7;
+    background: #c6e0e8;
+}
+
+.notification {
+    background: #d4dadc;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 2px;
+    color: white;
+    height: 23px;
+    width: 22px;
+}
+
+.active {
+    background: #c6e0e8;
+    border-left: 2px solid #096cb7;
+}
+
+.active label,
+.active span {
+    color: #096cb7;
+}
+
+.active .notification {
+    background: lightblue;
+    color: #096cb7;
+}
+
+label {
+    margin: 0;
+}

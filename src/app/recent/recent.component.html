@@ -1,0 +1,18 @@
+<div class="header d-flex justify-content-between p-3 align-items-center">
+  <label for="">Recent</label>
+
+  <label class="switch">
+    <input type="checkbox" checked>
+    <span class="slider round"></span>
+  </label>
+</div>
+<div class="list">
+  <div class="list-item p-2 d-flex" *ngFor="let item of recents">
+    <span class="fa {{item.icon}}" [ngStyle]="{color: item.color}"></span>
+    <div class="text">
+      <span class="hint">{{item.name}}</span>
+      <p>{{item.label}}</p>
+      <p>{{item.details}}</p>
+    </div>
+  </div>
+</div>
